@@ -12,7 +12,9 @@ The automatic way is to have a camera in front of the Monitor and use it to capt
 ![Original screen shot](frame001.png)
  
 Filter apply: Threshold 50% -> Black & White
+
 ![After BW](frame_001_1.png)
+
 ![After BW](frame_001_2.png)
 
 Invert Black <-> white and crop into 2  separates counter
@@ -20,9 +22,11 @@ Invert Black <-> white and crop into 2  separates counter
 Then apply an OCR with a special configuration that only “digit” and “:” are part of the dictionary
 
 `[ezerbib@localhost tiff]$     ../build/bin/tesseract  -psm 7 frame_003_1.png - digits`
+
 00:04:23:2 38
 
 `[ezerbib@localhost tiff]$     ../build/bin/tesseract  -psm 7 frame_003_2.png - digits`
+
 00:04:231208
 
 ### Mixing all these action in a perl script
